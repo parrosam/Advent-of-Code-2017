@@ -1,7 +1,7 @@
 """Day 2 of Advent of Code 2017"""
 
-import utils
 import itertools
+import utils
 
 def get_input():
     """Get input2.txt data as a list of list of int"""

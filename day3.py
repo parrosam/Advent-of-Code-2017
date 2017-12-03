@@ -11,7 +11,7 @@ def get_input():
 def puzzle_1(num):
     """Puzzle 1 solution"""
     nearest_smaller_sqroot = int(math.sqrt(num - 1))
-    square_area = math.pow(nearest_smaller_sqroot,2)
+    square_area = math.pow(nearest_smaller_sqroot, 2)
 
     is_even = nearest_smaller_sqroot % 2 == 0
     min_dist = (nearest_smaller_sqroot // 2) + (1 if not is_even else 0)
