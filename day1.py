@@ -1,18 +1,10 @@
 """This script is for day 1 on Advent of Code 2017"""
 
-import sys
-
-def get_file_contents(file_loc):
-    """Open file at location provided and return contents"""
-
-    with open(file_loc, 'r') as file_to_read:
-        return file_to_read.read()
+import utils
 
 def prep_input_list():
     """Read input from text file and convert to list of ints"""
-    input_file_loc = "data/input1.txt"
-    input_text = get_file_contents(input_file_loc)
-
+    input_text = utils.get_day_input(1)
     return list(map(int, input_text))
 
 def puzzle_1():
@@ -44,4 +36,5 @@ def puzzle_2():
     return total
 
 if __name__ == '__main__':
+    print(puzzle_1())
     print(puzzle_2())
